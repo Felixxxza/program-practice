@@ -8,6 +8,7 @@ public:
             l = r = i;
             while(l-1 >= 0 && s[l-1] == s[i]) --l;
             while(r+1 < n && s[r+1] == s[i]) ++r;
+            i = r;
             while(l-1 >= 0 && r+1 < n && s[l-1] == s[r+1]){
                 --l;
                 ++r;
